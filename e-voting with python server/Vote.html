@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ccc;
+        }
+        
+        button {
+            background-color: #3d70b2;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .header {
+            background: #3d70b2;
+            text-align: center;
+            color: white;
+            padding: 80px;
+        }
+        
+        .dropbtn {
+            background-color: #3d70b2;
+            color: white;
+            padding: 10px;
+            font-size: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #5596e6;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px;
+            z-index: 1;
+        }
+        
+        .content p {
+            color: #3d70b2;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown a:hover {
+            background-color: #ccc;
+        }
+        
+        .show {
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to 2022 Elections!!!</h1>
+        <p>Please fill the form below to vote for the canditate of your choice</p>
+    </div>
+    <h3>Please choose the political party of your choice</h3>
+    <form action="" style="border: 1px solid black;">
+        <input type="radio" id="apc" name="vote" value="apc">
+        <label for="apc">All Progressive Congress</label>
+        <br>
+        <input type="radio" id="pdp" name="vote" value="pdp">
+        <label for="apc">People's Democratic Party</label>
+        <br>
+        <input type="radio" id="acc" name="vote" value="accord">
+        <label for="apc">Accord</label>
+        <br>
+        <input type="radio" id="ypp" name="vote" value="accord">
+        <label for="apc">Young Progressives Party</label>
+        <br>
+        <input type="radio" id="js" name="vote" value="accord">
+        <label for="apc">All Progressives Grand Alliance</label>
+        <br>
+        <input type="radio" id="js" name="vote" value="accord">
+        <label for="apc">African Democratic Congress</label>
+        <br>
+        <input type="radio" id="js" name="vote" value="accord">
+        <label for="apc">People's Redemption Party</label>
+        <br>
+        <input type="radio" id="js" name="vote" value="accord">
+        <label for="apc">Action Alliance</label>
+        <br>
+        <input type="radio" id="js" name="vote" value="accord">
+        <label for="apc">African Action Congress</label>
+        <br>
+        <input type="radio" id="js" name="vote" value="accord">
+        <label for="apc">Action Peoples Party</label>
+        <button type="submit"> <a href="E-Voting.html">Submit</a></button>
+    </form>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
